@@ -62,7 +62,6 @@ img{
 
 .main-header{
     border-bottom: 1px solid rgba(231, 233, 252, 1);
-    padding: 24px;
 }
 
         /* WebLogo */
@@ -87,14 +86,16 @@ img{
     color: rgba(46, 47, 66, 1);
     font-weight: 500;
     line-height: 1.5;
-    
-    
 }
 
-    .head-nav-menu > li:nth-child(1){
+.head-nav-menu > li{
+    padding: 24px 0; 
+}
+
+    .head-nav-menu > li:hover{
         color: rgba(77, 90, 229, 1);}
 
-    .head-nav-menu > li:hover:nth-child(1)::after{
+    .head-nav-menu > li:active:nth-child(1)::after{
         display: block;
         content: "";
         background-color: #404bbf;
@@ -102,48 +103,28 @@ img{
         height: 4px;
         margin-top: -4px;
         position: relative;
-        bottom: -24px;
-        
-        
-    }   
-    
-    .head-nav-menu > li:hover:nth-child(2)::after{
-        display: block;
-        content: "";
-        background-color: #404bbf;
-        border-radius: 2px;
-        height: 4px;
-        margin-top: -4px;
-        position: relative;
-        bottom: -24px;
+        bottom: -24px;  
     } 
-
-    .head-nav-menu > li:hover:nth-child(3)::after{
-        display: block;
-        content: "";
-        background-color: #404bbf;
-        border-radius: 2px;
-        height: 4px;
-        margin-top: -4px;
-        position: relative;
-        bottom: -24px;
-
-    }
 
 .header-contacts {
     color: rgba(46, 47, 66, 0.7);
     line-height: 1.5;
     margin-left: 260px;
+
 }
 
 .contact-list{
     display: flex;
-    gap: 40px;
-    
+    gap: 40px;   
 }
 
+.contact-list > li{
+    padding: 24px 0;
+}
+
+
     .contact-list :hover,
-    .contact-list :focus {color: rgba(229, 77, 204, 1);}
+    .contact-list :focus {color: rgba(64, 75, 191, 1);}
 
 
                         /* FIRST MAIN SECTION (hero) - button & title */
@@ -190,8 +171,9 @@ img{
 }
 
     button:hover,
-    button:focus {color: rgba(46, 47, 66, 1);
-        background-color: orange;}
+    button:focus {color: rgba(255, 255, 255, 1);
+        background: rgba(64, 75, 191, 1);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);}
 
 
                            /* MAIN SECTION FEATURE */
@@ -286,7 +268,7 @@ img{
     letter-spacing: 0.02em;
 }
 
-.media-icon {
+.media-icon-team {
     display: flex;
     width: 232px;
     gap: 24px;
@@ -295,6 +277,9 @@ img{
     cursor: pointer;
 }
 
+.icon-team:hover {
+    --color2: #404BBF;
+}
 /* MAIN SECTION PORTFOLIO */
 
 
@@ -429,14 +414,19 @@ img{
     margin-bottom: 16px;
 }
 
-.media-icon {
+.media-icon-foot{
+    display: flex;
+    flex-direction: row;
+    width: 232px;
+    gap: 24px;
+    margin: 0 auto;
+    padding-top: 8px;
     cursor: pointer;
 }
 
-
-
-
-
+.icon-foot:hover {
+    --color2: rgba(49, 208, 170, 1);
+}
 
 
 
